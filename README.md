@@ -1,5 +1,6 @@
 # ros-humble-picamera2-docker
-This adds picamera2 (and its dependencies) to a ROS Humble repository. It uses libcamera v0.5.0+59-d83ff0a.
+This adds picamera2 (and its dependencies) to a ROS Humble repository. It uses libcamera v0.5.0+59-d83ff0a.  
+https://hub.docker.com/repository/docker/lugggi/ros-humble-picamera2/
 
 ## Connecting the Picamera
 
