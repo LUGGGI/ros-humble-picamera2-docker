@@ -16,7 +16,7 @@ If the program that is using picamera2 is running with user privileges, that use
 * Add the user to the video group when running the container by adding the argument: `--group-add 44`.
 * Add it when creating the user in the Dockerfile:
   ```bash
-  RG USERNAME=ubuntu
+  ARG USERNAME=ubuntu
   ARG HOST_VIDEO_GID=44  # Matches host 'video' group GID
   # Add the user to the video group to access camera devices
   RUN usermod -aG $(getent group $HOST_VIDEO_GID | cut -d: -f1) $USERNAME 
