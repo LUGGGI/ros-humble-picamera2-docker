@@ -66,7 +66,7 @@ RUN ldconfig
 
 
 # Get python bindings for pykms and libcamera
-RUN echo "/usr/local/lib/x86_64-linux-gnu/python3.10/site-packages" | tee /usr/local/lib/python3.10/dist-packages/kms_custom.pth
+RUN ARCH=$(uname -m) && echo "/usr/local/lib/${ARCH}-linux-gnu/python3.10/site-packages" | tee /usr/local/lib/python3.10/dist-packages/libcamera_kmsxx.pth
 
 # RUN pip install --upgrade pip
 # RUN pip install rpi-libcamera -C setup-args="-Drepository=https://github.com/raspberrypi/libcamera.git" -C setup-args="-Drevision=v0.5.0+rpt20250429"
